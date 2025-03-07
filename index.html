@@ -5,68 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Портфолио DevDaulet - Full-Stack Developer (Go, Node.js, Express, MongoDB, PostgreSQL, After Effects). Создаю современные сайты и приложения.">
     <title>DevDaulet | Портфолио</title>
+
+    <!-- Bootstrap & AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom Styles -->
     <style>
         body {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            font-family: Montserrat;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: 'Poppins', sans-serif;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
+            color: #fff;
         }
         .card {
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
-            background: white;
+            background: #fff;
+            max-width: 420px;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
         }
         .avatar {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 5px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .portfolio-links a {
-            display: block;
-            margin: 10px 0;
+            margin: 10px 5px;
+            transition: all 0.3s ease-in-out;
         }
-        .me-3 text-dark fs-4 {
-            align-content: center;
+        .portfolio-links a:hover {
+            transform: scale(1.05);
+        }
+        .social-links a {
+            font-size: 22px;
+            color: #333;
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-links a:hover {
+            color: #007bff;
         }
     </style>
 </head>
 <body>
+
 <div class="container" data-aos="fade-up">
-    <div class="card mx-auto" style="max-width: 400px;">
+    <div class="card mx-auto">
         <img src="img/photo_5348180980667641638_y.jpg" alt="Аватар" class="avatar mx-auto d-block">
         <h1 class="fw-bold mt-3">DevDaulet</h1>
         <p class="text-muted">Full-Stack Developer | Go, Node.js, MongoDB, PostgreSQL, After Effects</p>
-        <p>Создаю современные сайты, лендинги и backend-системы. Опыт работы с Go, Node.js, Express, MongoDB, PostgreSQL. Также занимаюсь видеомонтажом (After Effects).</p>
+        <p>Разрабатываю веб-приложения, backend-системы и лендинги. Опыт работы с Go, Node.js, Express, MongoDB, PostgreSQL. Также занимаюсь видеомонтажом (After Effects).</p>
 
+        <h5 class="mt-4">Портфолио</h5>
         <div class="portfolio-links">
-            <p>Портфолио</p>
             <a href="https://secureapp-1.onrender.com" class="btn btn-dark" target="_blank">Secure App</a>
             <a href="https://tamaqazaq.github.io/G7_project_new/contact_us.html" class="btn btn-dark" target="_blank">G7 Project</a>
         </div>
 
-        <a href="mailto:yermukhanovdaulet@gmail.com" class="btn btn-outline-secondary m-2">Связаться</a>
+        <a href="mailto:yermukhanovdaulet@gmail.com" class="btn btn-outline-secondary mt-3">Связаться</a>
 
-        <div class="mt-4">
-            <a href="https://github.com/tamaqazaq" class="me-3 text-dark fs-4" target="_blank">GitHub</a>
+        <div class="social-links mt-4">
+            <a href="https://github.com/tamaqazaq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </div>
 </div>
 
+<!-- Bootstrap & AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init();
 </script>
+
 </body>
 </html>
